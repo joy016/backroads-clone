@@ -1,0 +1,91 @@
+.sectionServices {
+  height: 40vh;
+  background-color: #f1f5f8;
+  padding: 2rem 0;
+}
+
+.servicesTitle {
+  text-align: center;
+}
+
+.servicesTitle h1 {
+  font-size: 2.3rem;
+  letter-spacing: 5px;
+}
+.servicesTitle span {
+  color: #2caeba;
+}
+
+.servicesCenter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.service {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.service span {
+  background-color: #2caeba;
+  padding: 0.5rem;
+  margin-right: 15px;
+}
+.service h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 4px;
+  font-size: 0.9em;
+}
+.service p {
+  margin: 0;
+  color: #617d98;
+  font-size: 0.8em;
+  max-width: 20rem;
+}
+
+.icons {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 480px) {
+  .sectionServices {
+    height: auto;
+    background-color: #f1f5f8;
+    padding: 2rem 0;
+  }
+  .servicesTitle h1 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+  .service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .servicesCenter {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .service h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+
+  .service p {
+    margin-bottom: 2.5em;
+    color: #617d98;
+    max-width: 18rem;
+  }
+}

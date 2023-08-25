@@ -76,10 +76,11 @@
   color: #324d67;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 450px) {
   .aboutContainer {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     height: 95vh;
-    padding: 2rem 0;
   }
 
   .aboutContainer h1 {
@@ -119,8 +120,9 @@
 @media (max-width: 768px) {
   .aboutContainer {
     height: 95vh;
-    padding: 2rem 0;
+    padding-top: 2rem;
     margin: 0 auto;
+    padding-bottom: 9rem;
   }
 
   .aboutContainer h1 {
