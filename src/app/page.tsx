@@ -7,6 +7,8 @@ import ServicesPage from './components/services/services';
 import servicesStyles from './components/services/services.module.css';
 import FeaturedPage from './components/featured/Featured';
 import featuredStyles from './components/featured/featured.module.css';
+import FooterPage from './components/footer/Footer';
+import footerStyles from './components/footer/footer.module.css';
 
 export default function Home() {
   return (
@@ -23,6 +25,9 @@ export default function Home() {
       </section>
       <section className={featuredStyles.sectionFeatured}>
         <FeaturedPage />
+      </section>
+      <section className={footerStyles['section-footer']}>
+        <FooterPage />
       </section>
     </main>
   );
