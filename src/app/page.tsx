@@ -5,6 +5,8 @@ import AboutPage from './components/about/AboutPage';
 import aboutStyles from './components/about/about.module.css';
 import ServicesPage from './components/services/services';
 import servicesStyles from './components/services/services.module.css';
+import FeaturedPage from './components/featured/Featured';
+import featuredStyles from './components/featured/featured.module.css';
 
 export default function Home() {
   return (
@@ -18,6 +20,9 @@ export default function Home() {
       </section>
       <section className={servicesStyles.sectionServices}>
         <ServicesPage />
+      </section>
+      <section className={featuredStyles.sectionFeatured}>
+        <FeaturedPage />
       </section>
     </main>
   );

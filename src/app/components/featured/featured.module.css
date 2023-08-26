@@ -1,0 +1,148 @@
+.sectionFeatured {
+  text-align: center;
+}
+
+.sectionFeatured h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.3rem;
+  letter-spacing: 5px;
+  margin: 4rem 0;
+}
+
+.sectionFeatured span {
+  color: #2caeba;
+}
+
+.centeredGrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  max-width: 67rem;
+}
+
+.tourCard {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+  background-color: #f1f5f8;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+  border-radius: 10px;
+}
+
+.tourCard:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tourImage {
+  position: relative;
+}
+.tourImage img {
+  height: 13rem;
+  width: 21rem;
+  object-fit: cover;
+}
+.tourImage p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #88ebf2;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.8em;
+}
+
+.tourInfo {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.tourInfo h4 {
+  letter-spacing: 3px;
+  font-size: 0.85em;
+}
+.tourInfo p {
+  color: #617d98;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  max-width: 19rem;
+}
+
+.tourInfoFooter {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: space-between;
+}
+
+.tourInfoFooter p {
+  color: #2caeba;
+}
+
+@media (max-width: 850px) {
+  .centeredGrid {
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 0.2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tourCard {
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .tourImage img {
+    height: 13rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 590px) {
+  .sectionFeatured h1 {
+    font-size: 1.5em;
+    margin: 2.5rem 0;
+  }
+  .centeredGrid {
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  .tourImage img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tourCard {
+    width: 30rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 572px) {
+  .sectionFeatured h1 {
+    font-size: 1.5em;
+    margin: 2.5rem 0;
+  }
+  .centeredGrid {
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  .tourImage img {
+    height: 13rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tourCard {
+    width: 23rem;
+    margin: 0 auto;
+  }
+}

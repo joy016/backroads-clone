@@ -76,47 +76,6 @@
   color: #324d67;
 }
 
-@media (max-width: 480px) and (min-width: 450px) {
-  .aboutContainer {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    height: 95vh;
-  }
-
-  .aboutContainer h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    margin-bottom: 4rem;
-  }
-
-  .aboutTiles {
-    display: grid;
-    grid-row-gap: 2rem;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-  }
-
-  .aboutImage,
-  .aboutPhoto {
-    position: relative;
-    width: 100%;
-    height: 300px;
-  }
-
-  .aboutImage::before {
-    content: none;
-  }
-
-  .aboutTiles h4 {
-    margin: 0;
-    letter-spacing: 3px;
-    font-size: 1.12rem;
-    font-weight: bold;
-  }
-}
-
 @media (max-width: 768px) {
   .aboutContainer {
     height: 95vh;
@@ -144,6 +103,47 @@
   .aboutPhoto {
     position: relative;
     width: 100%;
+  }
+
+  .aboutImage::before {
+    content: none;
+  }
+
+  .aboutTiles h4 {
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 1.12rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 525px) {
+  .aboutContainer {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    height: 95vh;
+  }
+
+  .aboutContainer h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-bottom: 4rem;
+  }
+
+  .aboutTiles {
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .aboutImage,
+  .aboutPhoto {
+    position: relative;
+    width: 100%;
+    height: 300px;
   }
 
   .aboutImage::before {
