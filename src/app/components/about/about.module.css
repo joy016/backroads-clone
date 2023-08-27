@@ -1,10 +1,11 @@
-.aboutContainer {
-  height: 95vh;
+.about-container {
+  height: 100%;
   width: 90vw;
   margin: 0 auto;
+  padding: 5rem 0;
 }
 
-.aboutContainer h1 {
+.about-container h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.3rem;
@@ -12,42 +13,42 @@
   margin-bottom: 4rem;
 }
 
-.aboutContainer span {
+.about-container span {
   color: #2caeba;
 }
-.aboutTiles {
+.about-tiles {
   display: grid;
   grid-column-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   max-width: 65rem;
   margin: 0 auto;
 }
-.aboutTiles article {
+.about-tiles article {
   display: block;
 }
 
-.aboutTiles h4 {
+.about-tiles h4 {
   margin: 0;
   letter-spacing: 5px;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.aboutTiles p {
+.about-tiles p {
   color: #617d98;
   font-size: 0.8em;
   line-height: 20px;
   margin-bottom: 1.5rem;
 }
 
-.aboutImage,
-.aboutPhoto {
+.about-image,
+.about-photo {
   position: relative;
   width: 500px;
   height: 400px;
 }
 
-.aboutImage::before {
+.about-image::before {
   position: absolute;
   box-sizing: border-box;
   border: 0.4rem solid #2caeba;
@@ -58,7 +59,7 @@
   content: '';
 }
 
-.btnReadMore {
+.btn-readmore {
   background-color: #2caeba;
   cursor: pointer;
   text-decoration: none;
@@ -71,20 +72,20 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.btnReadMore:hover {
+.btn-readmore:hover {
   background-color: #88ebf2;
   color: #324d67;
 }
 
 @media (max-width: 768px) {
-  .aboutContainer {
+  .about-container {
     height: 95vh;
     padding-top: 2rem;
     margin: 0 auto;
     padding-bottom: 9rem;
   }
 
-  .aboutContainer h1 {
+  .about-container h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
@@ -92,24 +93,24 @@
     margin-bottom: 4rem;
   }
 
-  .aboutTiles {
+  .about-tiles {
     display: grid;
     grid-row-gap: 2rem;
     grid-template-columns: 1fr;
     margin: 0 auto;
   }
 
-  .aboutImage,
-  .aboutPhoto {
+  .about-image,
+  .about-photo {
     position: relative;
     width: 100%;
   }
 
-  .aboutImage::before {
+  .about-image::before {
     content: none;
   }
 
-  .aboutTiles h4 {
+  .about-tiles h4 {
     margin: 0;
     letter-spacing: 3px;
     font-size: 1.12rem;
@@ -118,13 +119,13 @@
 }
 
 @media (max-width: 525px) {
-  .aboutContainer {
+  .about-container {
     padding-top: 2rem;
     padding-bottom: 5rem;
     height: 95vh;
   }
 
-  .aboutContainer h1 {
+  .about-container h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
@@ -132,25 +133,25 @@
     margin-bottom: 4rem;
   }
 
-  .aboutTiles {
+  .about-tiles {
     display: grid;
     grid-row-gap: 2rem;
     grid-template-columns: 1fr;
     margin: 0 auto;
   }
 
-  .aboutImage,
-  .aboutPhoto {
+  .about-image,
+  .about-photo {
     position: relative;
     width: 100%;
     height: 300px;
   }
 
-  .aboutImage::before {
+  .about-image::before {
     content: none;
   }
 
-  .aboutTiles h4 {
+  .about-tiles h4 {
     margin: 0;
     letter-spacing: 3px;
     font-size: 1.12rem;

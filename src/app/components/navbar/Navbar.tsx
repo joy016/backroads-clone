@@ -1,12 +1,15 @@
+'user client';
+
 import Image from 'next/image';
 import Styles from './navbar.module.css';
 import Link from 'next/link';
 import { BsFacebook, BsTwitter } from 'react-icons/bs';
 import { FaSquarespace } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { NAVLINK } from '../../../../constant/navbar';
 
-const Navbar = () => {
-  return (
+const Navbar = () => (
+  <div className={Styles.container}>
     <div className={Styles.navcontainer}>
       <Image
         src="https://backroads-app.netlify.app/static/media/logo.08d970fd0ddb0af90a9c60fb965e56d2.svg"
@@ -16,18 +19,11 @@ const Navbar = () => {
       />
 
       <ul className={Styles.navlist}>
-        <li>
-          <Link href="#">Dashboard</Link>
-        </li>
-        <li>
-          <Link href="#">About</Link>
-        </li>
-        <li>
-          <Link href="#">Services</Link>
-        </li>
-        <li>
-          <Link href="#">Tours</Link>
-        </li>
+        {NAVLINK.map(({ title, navLink }) => (
+          <li key={title}>
+            <Link href={navLink}>{title}</Link>
+          </li>
+        ))}
       </ul>
       <div className={Styles.iconsContainer}>
         <BsFacebook className={Styles.icon} />
@@ -36,7 +32,6 @@ const Navbar = () => {
         <GiHamburgerMenu className={Styles.menuIcon} />
       </div>
     </div>
-  );
-};
-
+  </div>
+);
 export default Navbar;

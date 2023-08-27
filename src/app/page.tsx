@@ -14,16 +14,19 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <section className={styles.homeContainer}>
+      <section id="home" className={styles['home-container']}>
         <HomePage />
       </section>
-      <section className={aboutStyles.aboutContainer}>
+      <section
+        id="about"
+        className={aboutStyles['about-container']}
+      >
         <AboutPage />
       </section>
-      <section className={servicesStyles.sectionServices}>
+      <section id="services" className={servicesStyles['section-services']}>
         <ServicesPage />
       </section>
-      <section className={featuredStyles.sectionFeatured}>
+      <section id="tours" className={featuredStyles['section-featured']}>
         <FeaturedPage />
       </section>
       <section className={footerStyles['section-footer']}>

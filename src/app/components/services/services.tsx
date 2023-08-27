@@ -1,54 +1,28 @@
+import { SERVICES_TITLE, SERVICE_INFO } from '../../../../constant/services';
 import styles from './services.module.css';
-import { FaWallet, FaTree, FaSocks } from 'react-icons/fa';
 
-const ServicesPage = () => {
-  return (
-    <>
-      <div className={styles.servicesTitle}>
-        <h1>
-          OUR <span>SERVICES</span>
-        </h1>
-        <div className={styles.servicesCenter}>
+const ServicesPage = () => (
+  <div className={styles['section-title']}>
+    <h1>
+      {SERVICES_TITLE.title} <span>{SERVICES_TITLE.spanTitle}</span>
+    </h1>
+    <div className={styles['section-center']}>
+      {SERVICE_INFO.map((item) => {
+        const { Icon } = item;
+        return (
           <article className={styles.service}>
             <span>
-              <FaWallet className={styles.icons} />
+              <Icon className={styles.icons} />
             </span>
             <div>
-              <h4>Saving Money</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                Asperiores, officia.
-              </p>
+              <h4>{item.titleInfo}</h4>
+              <p>{item.description}</p>
             </div>
           </article>
-          <article className={styles.service}>
-            <span>
-              <FaTree className={styles.icons} />
-            </span>
-            <div>
-              <h4>Endless Hiking</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                Asperiores, officia.
-              </p>
-            </div>
-          </article>
-          <article className={styles.service}>
-            <span>
-              <FaSocks className={styles.icons} />
-            </span>
-            <div>
-              <h4>Amazing Comfort</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                Asperiores, officia.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </>
-  );
-};
+        );
+      })}
+    </div>
+  </div>
+);
 
 export default ServicesPage;

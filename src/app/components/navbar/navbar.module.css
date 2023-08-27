@@ -1,7 +1,6 @@
 .navcontainer {
-  width: 100%;
   background-color: #fff;
-  height: 4rem;
+  height: 3.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,6 +31,8 @@
   padding: 10px;
   color: #102a42;
   transition: color 0.3s ease;
+  letter-spacing: 3.5px;
+  font-size: 0.8em;
 }
 
 .navlist li a:hover {
@@ -45,8 +46,8 @@
 }
 
 .icon {
-  width: 20px; /* Adjust the width as needed */
-  height: 18px; /* Adjust the height as needed */
+  width: 20px;
+  height: 18px;
   transition: color 0.3s ease;
 }
 
@@ -65,7 +66,13 @@
   color: #52d1da;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 2000px) {
+  .navcontainer {
+    width: 100%; /* Change the width as per your requirement */
+    padding: 0 4rem; /* Adjust the padding as needed */
+  }
+}
+@media only screen and (max-width: 480px) {
   .navcontainer {
     padding: 0 1rem;
   }

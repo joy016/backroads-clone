@@ -1,41 +1,39 @@
-import Image from 'next/image';
 import styles from './about.module.css';
 import Link from 'next/link';
+import {
+  ABOUT_IMAGE,
+  ABOUT_TITLE,
+  ABOUT_TITLE_SPAN,
+  ARTICLE_TITLE,
+  FIRST_DESCRIPTION,
+  READ_MORE_BUTTON,
+  SECOND_DESCRIPTION,
+} from '../../../../constant/about';
 
-const AboutPage = () => {
-  return (
-    <div>
-      <h1>
-        about <span>us</span>
-      </h1>
-      <div className={styles.aboutTiles}>
-        <div className={styles.aboutImage}>
-          <img
-            src="/images/about.jpeg"
-            alt="Picture of the author"
-            className={styles.aboutPhoto}
-          />
-        </div>
-
-        <article>
-          <h4>Explore The Difference</h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-            unde dolor?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-            unde dolor?
-          </p>
-          <Link href="#" className={styles.btnReadMore}>
-            Read more
-          </Link>
-        </article>
+const AboutPage = () => (
+  <div>
+    <h1>
+      {ABOUT_TITLE} <span>{ABOUT_TITLE_SPAN}</span>
+    </h1>
+    <div className={styles['about-tiles']}>
+      <div className={styles['about-image']}>
+        <img
+          src={ABOUT_IMAGE.imageSrc}
+          alt={ABOUT_IMAGE.imageAlt}
+          className={styles['about-photo']}
+        />
       </div>
+
+      <article>
+        <h4>{ARTICLE_TITLE}</h4>
+        <p>{FIRST_DESCRIPTION}</p>
+        <p>{SECOND_DESCRIPTION}</p>
+        <Link href="#home" className={styles['btn-readmore']}>
+          {READ_MORE_BUTTON}
+        </Link>
+      </article>
     </div>
-  );
-};
+  </div>
+);
 
 export default AboutPage;
