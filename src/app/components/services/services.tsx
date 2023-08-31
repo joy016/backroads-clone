@@ -10,7 +10,7 @@ const ServicesPage = () => (
       {SERVICE_INFO.map((item) => {
         const { Icon } = item;
         return (
-          <article className={styles.service}>
+          <article key={item.id} className={styles.service}>
             <span>
               <Icon className={styles.icons} />
             </span>
